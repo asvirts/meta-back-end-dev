@@ -10,13 +10,16 @@
 
 # Modify the line below
 coffee = input('1 coffee @: $ ')
+coffee = float(coffee)
 
 # Modify the line below
 sandwich = input('1 sandwich @: $ ')
+sandwich = float(sandwich)
 
 # Modify the line below
 cake = input('1 cake @: $ ')
+cake = float(cake)
 
-bill_total = float(coffee) + float(sandwich) + float(cake)
+bill_total = coffee + sandwich + cake
 
 print('Your total bill is $', bill_total)
