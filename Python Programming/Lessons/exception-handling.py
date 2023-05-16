@@ -4,5 +4,6 @@ def divide_by(a, b):
 
 try:
     print(divide_by(40, 0))
-except ZeroDivisionError:
-    print("You can't divide by zero!")
+except Exception as e:
+    print("You can't divide by zero!", e)
+    print("Error type:", type(e))
