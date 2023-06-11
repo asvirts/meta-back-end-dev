@@ -1,6 +1,3 @@
-import numpy
-import pandas
-
 from math import sqrt, factorial, log10
 import math as m
 
