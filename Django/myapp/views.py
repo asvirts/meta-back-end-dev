@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
 
 # Create your views here.
 
@@ -30,3 +30,10 @@ def drinks(request, drink_name):
     }
     choice_of_drink = drink[drink_name]
     return HttpResponse(f"<h2>{drink_name}</h2> " + choice_of_drink)
+
+
+def error(requestion):
+    if condition == True:
+        return HttpResponse('<h1>Page not found</h1>', status_code='404')
+    else:
+        return HttpResponse('<h1>Page was found</h1>')
